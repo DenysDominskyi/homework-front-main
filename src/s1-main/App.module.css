@@ -11,10 +11,10 @@
     padding: 24px 70px 32px 70px;
 
     max-width: 1280px;
-    max-height: 90vh;
+
 
     margin: 0 auto;
-    overflow-y: auto;
+
 }
 
 .hwTitle {
@@ -22,5 +22,4 @@
     font-weight: 600;
     line-height: 26.82px;
     text-align: left;
-
 }
