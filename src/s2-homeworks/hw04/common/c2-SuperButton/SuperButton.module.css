@@ -5,7 +5,7 @@
     gap: 10px;
     border-radius: 3px;
     border: none;
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
 
     font-family: Montserrat;
     font-size: 14px;
@@ -39,36 +39,35 @@
 }
 
 .default:hover {
-    width: 167px;
+    /* width: 167px; */
     background-color: #0080FF;
 
 }
 
 .red:hover {
-    width: 167px;
+    /* width: 167px; */
     background-color: #FF1A47;
 }
 
 .secondary:hover {
-    width: 167px;
+    /* width: 167px; */
     background-color: #E5F0FA;
 }
 
 .default:active {
-    width: 149px;
+    /* width: 149px; */
     background-color: #0059B2;
 }
 
 .red:active {
-    width: 149px;
+    /* width: 149px; */
     background-color: #B21232;
 }
 
 .button:disabled {
-
 }
 
 .secondary:active {
-    width: 149px;
+    /* width: 149px; */
     background-color: #C9E5FF;
 }
