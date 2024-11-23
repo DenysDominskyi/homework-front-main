@@ -4,10 +4,10 @@ import { restoreState } from "../hw06/localStorage/localStorage";
 import s from "./Clock.module.css";
 
 /*
-* 1 - в файле Clock.tsx дописать функции stop, start, onMouseEnter, onMouseLeave
+DONE * 1 - в файле Clock.tsx дописать функции stop, start, onMouseEnter, onMouseLeave
 DONE * 2 - в файле Clock.tsx из переменной date вычислить значения stringTime, stringDate, stringDay, stringMonth
 DONE * 3 - в файле Clock.tsx дизэйблить кнопки стоп / старт если таймер не запущен / запущен соответственно
-* 4 - сделать стили в соответствии с дизайном
+DONE * 4 - сделать стили в соответствии с дизайном
 * */
 
 function Clock() {

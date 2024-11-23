@@ -11,7 +11,10 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
-
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: h;
+    
     color: #FFFFFF;
     cursor: pointer;
 }
