@@ -35,10 +35,11 @@ const HW14 = () => {
         getTechs(value)
             .then((res) => {
                 // делает студент
-
-                // сохранить пришедшие данные
-
-                //
+                const data = res?.data?.techs 
+                if(data) {
+                    setTechs(data)
+                }
+                setLoading(false)
             })
     }
 
@@ -47,9 +48,7 @@ const HW14 = () => {
         // делает студент
 
         // добавить/заменить значение в квери урла
-        // setSearchParams(
-
-        //
+        setSearchParams(value)
     }
 
     useEffect(() => {
