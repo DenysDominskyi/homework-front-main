@@ -8,11 +8,11 @@ import SuperSort from "./common/c10-SuperSort/SuperSort";
 
 /*
  DONE * 1 - дописать SuperPagination
- * 2 - дописать SuperSort
- * 3 - проверить pureChange тестами
- * 3 - дописать sendQuery, onChangePagination, onChangeSort в HW15
- DONE* 4 - сделать стили в соответствии с дизайном
- DONE* 5 - добавить HW15 в HW5/pages/JuniorPlus
+ DONE * 2 - дописать SuperSort
+ DONE * 3 - проверить pureChange тестами
+ DONE * 3 - дописать sendQuery, onChangePagination, onChangeSort в HW15
+ DONE * 4 - сделать стили в соответствии с дизайном
+ DONE * 5 - добавить HW15 в HW5/pages/JuniorPlus
  * */
 
 type TechType = {
@@ -64,18 +64,14 @@ const HW15 = () => {
     setPage(newPage);
     setCount(newCount)
     sendQuery({sort, page: newPage, count: newCount})
-    // setSearchParams(
-
-    //
+    setSearchParams({ page: newPage.toString(), count: newCount.toString() })
   };
 
   const onChangeSort = (newSort: string) => {
-    // делает студент
-    // setSort(
-    // setPage(1) // при сортировке сбрасывать на 1 страницу
-    // sendQuery(
-    // setSearchParams(
-    //
+    setSort(newSort)
+    setPage(1)
+    sendQuery({sort: newSort, page, count})
+    setSearchParams({ sort: newSort, page: "1", count: count.toString() })
   };
 
   useEffect(() => {
